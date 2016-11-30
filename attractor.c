@@ -800,12 +800,12 @@ void SortFun(int * Pointer, int Num){
 				swap = Pointer[j+1];
 				Pointer[j+1] = Pointer[j];
 				Pointer[j] = swap;
+				LastChangeIndex = j+1;
 			}
 		}
 		i = LastChangeIndex;
 	}
-} 
-
+}
 
 int main(int argc, char * argv[]){
 
