@@ -22,3 +22,7 @@ We implement our proposed community detection algorithm (Attractor) in 'attracto
 - Format of the output result(see ./Result_example.txt): each line contains two number: the node number and its corresponding cluster
 
 - This source code supposes that the degree of the biggest degree node is smaller than 1000. If it is not this situation, the codes in line 12 should be modified according the real situation.
+
+## UPDATE
+### 2016-11-30
+- Correct _SortFun_ function which may lead to mistakes in finding CN and EN. For experiments, results of Zarachy, Football, Polbooks, Amazon, Friendship and synthetic networks are not influenced. However, hepth (Collaboration) and RoadPa are influenced. HEPTH: correct modularity is 0.337 and new NCUT is 214.226 (vs 0.579 and 1179); ROADPA: correct modularity is 0.865 and new NCUT is 25055 (vs 0.856 and 25055).
